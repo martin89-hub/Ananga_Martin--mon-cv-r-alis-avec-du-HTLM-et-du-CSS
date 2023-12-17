@@ -1,0 +1,210 @@
+
+/*polices importées via google font et @font-face*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@700&display=swap');
+
+
+
+/*police pour les contenus*/
+p,h3,ul{
+    font-size:13px ;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*police pour les titres*/
+h1,h2{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*style pour le cadre du cv global*/
+body{
+    width: 1160px;
+    border: solid;
+    height: 1321px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+/*style pour le cadre du contenu*/
+
+.container{
+margin-left: auto;
+margin-right: auto;
+}
+
+.container{
+    border: ridge;
+    border-left: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom:20 %;
+    background-color:#782221;
+    
+}
+
+
+
+
+/*style pour la photo de profil*/
+
+.img-area,img,h1{
+    text-align: center;
+}
+
+.img-area img{ /*ombre autour de la photo de profil*/
+    border-radius: 50%;
+    margin-top: 15px ;
+    box-shadow:0 0 10px whitesmoke ;
+    object-fit: cover;
+    
+}
+
+.img-area ,h1,h4{
+color: white;
+}
+
+
+/*style pour la navigation*/
+
+.nav {
+    display: flex;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+}
+
+.nav ,a{
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a{
+    text-decoration: none; 
+
+}
+
+.nav{
+    background-color:#2c1d27;
+    height: 8%;
+}
+
+/*style pour les deux parties du cv,car il est reparti en deux parties : partie gauche et partie droite*/
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    padding:5px;
+}
+
+* p ,ul,h2{
+line-height: 1rem;/*espace entre les lignes du texte*/
+}
+
+.left p{
+    color:white; /*couleur du paragraphe du coté droit*/
+}
+
+.left ul{
+color: white;
+}
+
+.right{ /*style de la partie guache*/
+    background-color:white;
+    padding: 250px;
+    padding-top: 0.09%;
+    padding-left: 2px;
+    padding-bottom: 5%; 
+}
+
+.right ,h2, h3, p ul{
+    line-height:2rem ;
+}
+
+.right h2{
+    width:215%;
+    height:28px;
+    align-items: center;
+}
+
+.left h2{
+    width: px;
+    margin: 2.5%;
+    height:28px ;
+    text-align: left;
+}
+
+.rigth ,p ,ul, h3 ,h2{
+color: black;
+}
+
+h2{
+    background-color: #dbc2a4 ;
+}
+
+.right,h3{
+    width:210%;
+}
+
+
+.social-media,a{
+    
+    text-align: center;  
+}
+
+.social-media p{
+    color: white;
+}
+
+
+/*style pour le soulignement au survol*/
+.nav a:hover{
+    text-decoration: underline;
+    transition-color: 0.5s;
+}
+
+/*style pour reduire l'opacité au survol d'une icone de réseau social*/
+.social-media img{
+    opacity: 1;/*opacity par défaut*/
+    transition: opacity 0.4s; /*transition pour une animation douce*/
+}
+
+.social-media:hover img{
+    opacity: 0.8;/* opacity réduite au survol*/
+}
+
+
+/*zoom au survol de la photo de profil*/
+
+.img-area img:hover{
+    scale: 1.1;
+    cursor: zoom-in;
+}
+
+/*Au survol d'une expérience professionnelle / études / formations ou des
+compétences, un trait bordeaux apparaît à droite*/
+
+.right h2:hover{
+    border-left: 3px solid #782221; /*ajout du trait au survol à gauche au survol*/
+    padding-left: 3px; /*ajout d'espace pour accomoder le trait*/
+    cursor: pointer;
+
+}
+    
